@@ -1,0 +1,45 @@
+.app-background {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(1, 19, 19, 0.9), rgba(2, 66, 66, 0.8), rgba(20,120,120,0.7));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.oss-logo {
+  width: 100px;   /* Adjust size as needed */
+  height: auto;
+}
+body, #root {
+  min-height: 100vh;
+  margin: 0;
+  /* Gradient background */
+  background: linear-gradient(135deg, #16242a 0%, #5cb2b6 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.background-svg {
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.form-wrapper {
+  position: relative;
+  z-index: 2;
+  /* Add any desired padding/margin */
+}
+
+
+
