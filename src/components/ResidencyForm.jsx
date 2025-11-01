@@ -64,7 +64,7 @@ const ResidencyForm = ({ formData, updateForm, onBack, onSubmit }) => {
       </div>
 
       <ReCAPTCHA
-        sitekey="6Lfmof4rAAAAAAcSyvnJU_7G8oVqsgKNT2jEfdJb"
+        sitekey="6Lfhov4rAAAAAHoUHWZHs56eLYxz1wmdp-YD8M0L"
         onChange={onCaptchaChange}
         ref={recaptchaRef}
       />
