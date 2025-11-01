@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import "../styles/Form.css";
+import "../styles/form.css";
 
 const ResidencyForm = ({ formData, updateForm, onBack, onSubmit }) => {
   const recaptchaRef = useRef(null);
