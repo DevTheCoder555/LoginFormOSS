@@ -1,7 +1,7 @@
 function RegistrationForm({ onNext, formData, updateForm }) {
   return (
     <form className="form-container" onSubmit={(e) => e.preventDefault()}>
-      <h1 className="form-title">HOUR OF CODE</h1>
+      <h1 className="form-title">HOUR OF CODE 4.0</h1>
       <input
         type="text"
         placeholder="Full Name"

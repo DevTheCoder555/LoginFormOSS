@@ -1,3 +1,4 @@
+
 .app-background {
   min-height: 100vh;
   background: linear-gradient(135deg, rgba(1, 19, 19, 0.9), rgba(2, 66, 66, 0.8), rgba(20,120,120,0.7));
@@ -15,8 +16,13 @@
 }
 
 .oss-logo {
-  width: 100px;   /* Adjust size as needed */
-  height: auto;
+  width: 64;
+height: 64;
+range: 0 deg;
+opacity: 1;
+top: -5px;
+left: 7px;
+
 }
 body, #root {
   min-height: 100vh;
@@ -40,6 +46,7 @@ body, #root {
   z-index: 2;
   /* Add any desired padding/margin */
 }
+
 
 
 

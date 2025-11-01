@@ -1,28 +1,7 @@
-import React, { useRef, useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
-import "../styles/form.css";
-
-const ResidencyForm = ({ formData, updateForm, onBack, onSubmit }) => {
-  const recaptchaRef = useRef(null);
-  const [captchaValue, setCaptchaValue] = useState(null);
-
-  const onCaptchaChange = (value) => {
-    setCaptchaValue(value);
-  };
-
-  const handleSubmit = () => {
-    if (!captchaValue) {
-      alert("Please verify that you are not a robot!");
-      return;
-    }
-    onSubmit();
-    recaptchaRef.current.reset();
-  };
-
+function ResidencyForm({ onBack, onSubmit, formData, updateForm }) {
   return (
     <form className="form-container" onSubmit={(e) => e.preventDefault()}>
       <h1 className="form-title">HOUR OF CODE</h1>
-
       <input
         type="text"
         placeholder="Contact Number"
@@ -30,7 +9,6 @@ const ResidencyForm = ({ formData, updateForm, onBack, onSubmit }) => {
         value={formData.contactNumber}
         onChange={(e) => updateForm("contactNumber", e.target.value)}
       />
-
       <input
         type="email"
         placeholder="Email Address"
@@ -40,7 +18,7 @@ const ResidencyForm = ({ formData, updateForm, onBack, onSubmit }) => {
       />
 
       <div className="form-row">
-        <label>Residency Status</label>
+        <span>Residency Status</span>
         <label>
           <input
             type="radio"
@@ -63,22 +41,19 @@ const ResidencyForm = ({ formData, updateForm, onBack, onSubmit }) => {
         </label>
       </div>
 
-      <ReCAPTCHA
-        sitekey="6Lfhov4rAAAAAHoUHWZHs56eLYxz1wmdp-YD8M0L"
-        onChange={onCaptchaChange}
-        ref={recaptchaRef}
-      />
+      <div style={{ margin: "16px 0" }}>
+        <input type="checkbox" /> I'm not a robot
+      </div>
 
       <div className="form-buttons">
         <button type="button" className="form-button" onClick={onBack}>
           Back
         </button>
-        <button type="button" className="form-button" onClick={handleSubmit}>
+        <button type="button" className="form-button" onClick={onSubmit}>
           Submit
         </button>
       </div>
     </form>
   );
-};
-
+}
 export default ResidencyForm;
