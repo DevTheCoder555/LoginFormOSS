@@ -1,8 +1,7 @@
 function ResidencyForm({ onBack, onSubmit, formData, updateForm }) {
   return (
     <form className="form-container" onSubmit={(e) => e.preventDefault()}>
-      <h1 className="form-title">HOUR OF CODE</h1>
-      <input
+            <input
         type="text"
         placeholder="Contact Number"
         className="form-input"
