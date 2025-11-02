@@ -4,6 +4,7 @@ import ResidencyForm from "./components/ResidencyForm";
 import SuccessPage from "./components/SuccessPage";
 import "./styles/App.css";
 import Logo from "./components/Logo";
+import Background from "./components/Background";
 
 function App() {
   const [step, setStep] = useState(1);
@@ -28,6 +29,7 @@ function App() {
   return (
     <div className="app-background">
       <Logo />
+      <Background />
       
       {step === 1 && (
         <RegistrationForm

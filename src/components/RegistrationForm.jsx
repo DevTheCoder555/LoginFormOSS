@@ -1,7 +1,6 @@
 function RegistrationForm({ onNext, formData, updateForm }) {
   return (
     <form className="form-container" onSubmit={(e) => e.preventDefault()}>
-      <h1 className="form-title">HOUR OF CODE 4.0</h1>
       <input
         type="text"
         placeholder="Full Name"
@@ -50,7 +49,7 @@ function RegistrationForm({ onNext, formData, updateForm }) {
   <option value="" disabled>
     Select your branch
   </option>
-  <option value="CSE">CSE</option>
+  <option value="CSE">CSE </option>
   <option value="ECE">CS</option>
   <option value="ME">CSE-AIML</option>
   <option value="CE">AIML</option>

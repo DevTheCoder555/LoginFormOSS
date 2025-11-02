@@ -15,6 +15,7 @@ function ResidencyForm({ onBack, onSubmit, formData, updateForm }) {
         className="form-input"
         value={formData.emailAddress}
         onChange={(e) => updateForm("emailAddress", e.target.value)}
+        
       />
 
       <div className="form-row">
